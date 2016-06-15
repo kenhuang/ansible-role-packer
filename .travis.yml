@@ -36,3 +36,10 @@ script:
     | grep -q 'changed=0.*failed=0'
     && (echo 'Idempotence test: pass' && exit 0)
     || (echo 'Idempotence test: fail' && exit 1)
+
+  # Test uninstall
+  - >
+    ansible-playbook -i tests/inventory tests/$SITE -t uninstall --sudo
+    | grep -q 'changed=1.*failed=0'
+    && (echo 'Idempotence test: pass' && exit 0)
+    || (echo 'Idempotence test: fail' && exit 1)
