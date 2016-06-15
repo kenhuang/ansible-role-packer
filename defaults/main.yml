@@ -1,0 +1,15 @@
+---
+# defaults file for ansible-galaxy-packer
+
+# Version to be installed
+packer_version: 0.10.1
+# Base download URL
+packer_base_url: https://releases.hashicorp.com/packer
+# SHA256 from file
+packer_sha256sum: c78a986708d48b69b42f02ca9e4a7974a9b7c453d65e9be6785e013af08ff90b
+# Packer architecture
+packer_arch: amd64
+# Download cache
+packer_download_cache: /tmp/packer.zip
+# Path where packer should be installed
+packer_path: /opt/packer
