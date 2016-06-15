@@ -13,11 +13,11 @@ Role Variables
 
 Available variables are listed below, along with default values (see `defaults/main.yml`):
 
-	packer_version: 0.8.6
+	packer_version: 0.10.1
 
 The version which should be installed.
 
-	packer_sha256sum: 2f1ca794e51de831ace30792ab0886aca516bf6b407f6027e816ba7ca79703b5
+	packer_sha256sum: c78a986708d48b69b42f02ca9e4a7974a9b7c453d65e9be6785e013af08ff90b
 
 The sha256sum of the downloaded zip file.
 
@@ -47,7 +47,7 @@ Example Playbook
 
     - hosts: buildservers
       roles:
-         - { role: craneworks.packer, packer_version: 0.8.0, packer_sha256sum: 74b21580a7734fd6a025cfbba5ec60b85a61cd7c99ffe87904c4c013c801e6d2 }
+         - { role: craneworks.packer, packer_version: 0.10.1, packer_sha256sum: c78a986708d48b69b42f02ca9e4a7974a9b7c453d65e9be6785e013af08ff90b }
 
 License
 -------
