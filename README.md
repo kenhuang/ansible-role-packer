@@ -3,6 +3,12 @@ Ansible role: ansible-role-packer
 
 An Ansible role that installs Hashicorps Packer
 
+Build status
+------------
+
+[![Build Status](https://travis-ci.org/kenhuang/ansible-role-packer.svg?branch=master)](https://travis-ci.org/kenhuang/ansible-role-packer)
+
+
 Requirements
 ------------
 
