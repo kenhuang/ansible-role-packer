@@ -17,7 +17,7 @@ Available variables are listed below, along with default values (see `defaults/m
 
 The version which should be installed.
 
-	packer_sha256sum: c78a986708d48b69b42f02ca9e4a7974a9b7c453d65e9be6785e013af08ff90b
+	packer_sha256sum: 7d51fc5db19d02bbf32278a8116830fae33a3f9bd4440a58d23ad7c863e92e28
 
 The sha256sum of the downloaded zip file.
 
@@ -47,7 +47,7 @@ Example Playbook
 
     - hosts: buildservers
       roles:
-         - { role: kenhuang.packer, packer_version: 0.10.1, packer_sha256sum: c78a986708d48b69b42f02ca9e4a7974a9b7c453d65e9be6785e013af08ff90b }
+         - { role: kenhuang.packer, packer_version: 0.10.1, packer_sha256sum: 7d51fc5db19d02bbf32278a8116830fae33a3f9bd4440a58d23ad7c863e92e28 }
 
 License
 -------
