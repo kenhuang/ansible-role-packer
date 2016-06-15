@@ -1,4 +1,4 @@
-Ansible role: packer
+Ansible role: ansible-role-packer
 =========
 
 An Ansible role that installs Hashicorps Packer
