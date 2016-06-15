@@ -17,6 +17,9 @@ install:
   - "{ echo '[defaults]'; echo 'roles_path = ../'; } >> ansible.cfg"
 
 script:
+  # install role
+  - ansible-galaxy install kenhuang.packer
+
   # Check the role/playbook's syntax.
   - "ansible-playbook -i tests/inventory tests/$SITE --syntax-check"
 
@@ -24,7 +27,6 @@ script:
   - "ansible-playbook -i tests/inventory tests/$SITE --sudo"
 
   # Simulate an update
-  - ansible-galaxy install kenhuang.packer
   - sudo bash -c 'echo 0.7.0 > /opt/packer/info.txt'
   - ansible-playbook -i tests/inventory tests/$SITE --sudo
 
