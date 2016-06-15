@@ -47,7 +47,7 @@ Example Playbook
 
     - hosts: buildservers
       roles:
-         - { role: craneworks.packer, packer_version: 0.10.1, packer_sha256sum: c78a986708d48b69b42f02ca9e4a7974a9b7c453d65e9be6785e013af08ff90b }
+         - { role: kenhuang.packer, packer_version: 0.10.1, packer_sha256sum: c78a986708d48b69b42f02ca9e4a7974a9b7c453d65e9be6785e013af08ff90b }
 
 License
 -------
